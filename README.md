@@ -9,6 +9,7 @@ In folder_ks5: timepoint5
 # Conclusion: It is similar to "Paclitaxel".
 
 Description of how I dealt with the problem: I reorganized the data. Then I used PCA model to reduce the dimensions. (238 to 2). Then I used the component(coordinates). I made a KNN model to get the most similar single drug response. 
-KNN: I used Euclidean distance. I computed the centroid of the drug combinations. I calculated the distances between the combination centroid and other single drug data points. 
+KNN: I used Euclidean distance. I computed the centroid of the drug combinations. I calculated the distances between the combination centroid and other single drug data points. #
+
 
 

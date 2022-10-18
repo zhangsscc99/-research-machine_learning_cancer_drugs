@@ -1,0 +1,21 @@
+# training   df frame
+
+#dmso_df
+#training2  (160 drugs single class)
+#set_diff_df (320 cross-class combination)
+#result:training2, set_diff_df, dmso_df
+160, 320, 32
+#filtered is selected
+#filtered: 374(not including dmso)
+
+#X_training 115
+#X_testing 259
+
+#32 dna
+#64 mt
+#96 hsp
+#128 prot
+#160 hdac
+
+#label很多 主要是
+#

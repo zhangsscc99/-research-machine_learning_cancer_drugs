@@ -31,4 +31,28 @@ mkdir('matlab/myfiles')
 addpath('matlab/myfiles')  
 savepath matlab/myfiles/pathdef.m
 
+## run .m file
+How to run the m-file?
+After the m-file is saved with the name filename.m in the current MATLAB folder or directory, you can execute the commands in the m-file by simply typing filename at the MATLAB command window prompt.
 
+If you don't want to run the whole m-file, you can just copy the part of the m-file that you want to run and paste it at the MATLAB prompt.
+
+
+
+## get
+get(req) returns the value of all properties of the requirement object (sdo.requirements.StepResponseEnvelope, ...).
+
+get(req,PropertyName) returns value of a specific property. Use a cell array of property names to return a cell array with multiple property values.
+
+v = get(h)
+v = get(h,propertyName)
+v = get(h,propertyArray)
+v = get(h,'default')
+v = get(h,defaultTypeProperty)
+v = get(groot,'factory')
+v = get(groot,factoryTypeProperty)
+
+## set
+Modify the properties of the model. Add an input delay of 0.1 second, label the input as torque, and set the D matrix to 0.
+
+set(sys,'InputDelay',0.1,'InputName','torque','D',0);

@@ -56,3 +56,18 @@ v = get(groot,factoryTypeProperty)
 Modify the properties of the model. Add an input delay of 0.1 second, label the input as torque, and set the D matrix to 0.
 
 set(sys,'InputDelay',0.1,'InputName','torque','D',0);
+
+## [~,variable]
+But if you just want to know C (and you don't care IDX), it is not usefull to assign this value to a variable.
+So, when you use [~,palette], that means that you just want the second output of your function, and do not care the first one.
+
+## repmat
+B = repmat(A,2)
+B = 6×6
+
+   100     0     0   100     0     0
+     0   200     0     0   200     0
+     0     0   300     0     0   300
+   100     0     0   100     0     0
+     0   200     0     0   200     0
+     0     0   300     0     0   300

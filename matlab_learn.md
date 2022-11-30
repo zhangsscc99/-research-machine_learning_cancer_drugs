@@ -74,3 +74,42 @@ B = 6×6
      
  ## usual functions
  https://zhuanlan.zhihu.com/p/343835034
+ 
+ ## disp
+ A = [15 150];
+S = 'Hello World.';
+Display the value of each variable.
+
+disp(A)
+    15   150
+disp(S)
+Hello World.
+
+## strcmpi
+s1 = {'Tinker', 'Tailor';
+      '  Soldier', 'Spy'};
+s2 = {'Tinker', 'Baker';
+      'Soldier', 'SPY'};
+
+tf = strcmpi(s1,s2)
+tf = 2x2 logical array
+
+   1   0
+   0   1
+
+tf(1,1) is 1 because 'Tinker' is in the first cell of both arrays. tf(2,2) is 1 because 'Spy' and 'SPY' differ only in case. tf(2,1) is 0 because ' Soldier' in s1(2,1) has whitespace characters, and 'Soldier' in s2(2,1) does not.
+
+## sc
+SC is a useful function for displaying rich image data, of use to anyone wishing to visualize and save 2D data in ways beyond that which MATLAB built-in functions allow.
+
+## numel
+numel
+Number of data elements in fi array
+
+## confidence score过程
+先造一个分布（用nearest distance），然后自己想要的分布
+然后，再套在一组数据里，按照分布来构建一套数据，也就是在这里，我们需要弄出一个pdf函数
+ 
+ ## confidence score
+ hcs predict file
+ 
